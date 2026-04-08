@@ -55,14 +55,24 @@ Die verwendeten CSV-Dateien sind **Leakage-bereinigte** Varianten:
 
 ```
 .
-├── Cybersecurity.ipynb                        # Phase 1: EDA & Datenaufbereitung
-├── Dummy_Classifier_Training.ipynb            # Baseline-Modell (Stratified Random)
-├── Decision_Tree_Training_CORRECTED.ipynb     # Decision Tree mit GridSearchCV
-├── Logistic_Regression_Training_CORRECTED.ipynb # Logistic Regression mit GridSearchCV
-├── utils.py                                   # Gemeinsame Hilfsfunktionen
-├── requirements.txt                           # Python-Abhängigkeiten
-├── UNSW_NB15_train_LEAKAGE_REMOVED.csv        # Trainingsdaten
-└── UNSW_NB15_test_LEAKAGE_REMOVED.csv         # Testdaten
+├── README.md
+├── requirements.txt
+├── data/
+│   ├── UNSW_NB15_train_LEAKAGE_REMOVED.csv   # Rohdaten: Trainingsdaten (leakage-frei)
+│   ├── UNSW_NB15_test_LEAKAGE_REMOVED.csv    # Rohdaten: Testdaten (leakage-frei)
+│   ├── UNSW_NB15_training-set.csv            # Originaldatensatz für EDA
+│   ├── cybersecurity_cleaned.csv             # Output: bereinigter Datensatz
+│   ├── UNSW_NB15_train.csv                   # Output: ML-ready Trainingsdaten
+│   └── UNSW_NB15_test.csv                    # Output: ML-ready Testdaten
+├── notebooks/
+│   ├── Cybersecurity.ipynb                   # Phase 1: EDA & Datenaufbereitung
+│   ├── Dummy_Classifier_Training.ipynb       # Baseline-Modell (Stratified Random)
+│   ├── Decision_Tree_Training_CORRECTED.ipynb
+│   └── Logistic_Regression_Training_CORRECTED.ipynb
+├── src/
+│   └── utils.py                              # Gemeinsame Hilfsfunktionen
+└── images/
+    └── unsw_nb15_profiling_report.html       # Output: automatisierter EDA-Report
 ```
 
 ---

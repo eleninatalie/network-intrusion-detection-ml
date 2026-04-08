@@ -1,0 +1,15 @@
+# Data files
+*.csv
+*.xlsx
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Plots & Reports
+*.png
+*.html

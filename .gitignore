@@ -1,5 +1,7 @@
 # Data files
 *.csv
+!UNSW_NB15_training-set.csv
+
 *.xlsx
 
 # macOS
